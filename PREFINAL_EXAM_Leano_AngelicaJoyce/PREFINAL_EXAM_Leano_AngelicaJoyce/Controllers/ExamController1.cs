@@ -75,6 +75,19 @@ namespace IT_ELECTIVE_2_PREFINAL_EXAM.Controllers
                     },
                     YourAnswer = "C"
                 },
+                new Question
+                {
+                    Number = 6,
+                    Text = "Where is a database connection string commonly stored in an ASP.NET Core MVC application?",
+                    Choices = new[]
+                    {
+                        "A. Program.cs only",
+                        "B. appsettings.json",
+                        "C. Index.cshtml",
+                        "D. Student.cs"
+                    },
+                    YourAnswer = "B"
+                },
             };
 
             return View(questions);
