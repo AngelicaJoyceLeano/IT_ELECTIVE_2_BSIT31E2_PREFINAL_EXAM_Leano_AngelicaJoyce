@@ -101,6 +101,19 @@ namespace IT_ELECTIVE_2_PREFINAL_EXAM.Controllers
                     },
                     YourAnswer = "B"
                 },
+                new Question
+                {
+                    Number = 8,
+                    Text = "In the following example, what is SectionId? public int SectionId { get; set; } public Section Section { get; set; }",
+                    Choices = new[]
+                    {
+                        "A. Primary key of Student",
+                        "B. Foreign key referencing Section",
+                        "C. Navigation property",
+                        "D. Database connection string"
+                    },
+                    YourAnswer = "B"
+                },
             };
 
             return View(questions);
