@@ -49,6 +49,19 @@ namespace IT_ELECTIVE_2_PREFINAL_EXAM.Controllers
                     },
                     YourAnswer = "C"
                 },
+                new Question
+                {
+                    Number = 4,
+                    Text = "Which EF Core component is primarily responsible for communicating with the database?",
+                    Choices = new[]
+                    {
+                        "A. DbContext",
+                        "B. DbSetView",
+                        "C. ControllerContext",
+                        "D. RazorContext"
+                    },
+                    YourAnswer = "A"
+                },
             };
 
             return View(questions);
