@@ -140,6 +140,19 @@ namespace IT_ELECTIVE_2_PREFINAL_EXAM.Controllers
                     },
                     YourAnswer = "B"
                 },
+                new Question
+                {
+                    Number = 11,
+                    Text = "Why might a ViewModel be used when displaying Student and Section information?",
+                    Choices = new[]
+                    {
+                        "A. To replace the database",
+                        "B. To combine or shape the data specifically needed by the view",
+                        "C. To automatically create database tables",
+                        "D. To prevent controllers from using LINQ"
+                    },
+                    YourAnswer = "B"
+                },
             };
 
             return View(questions);
