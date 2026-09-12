@@ -88,6 +88,19 @@ namespace IT_ELECTIVE_2_PREFINAL_EXAM.Controllers
                     },
                     YourAnswer = "B"
                 },
+                new Question
+                {
+                    Number = 7,
+                    Text = "A Student belongs to exactly one Section, while a Section can contain many students. What type of relationship is this?",
+                    Choices = new[]
+                    {
+                        "A. One-to-One",
+                        "B. One-to-Many",
+                        "C. Many-to-Many",
+                        "D. Many-to-One only"
+                    },
+                    YourAnswer = "B"
+                },
             };
 
             return View(questions);
