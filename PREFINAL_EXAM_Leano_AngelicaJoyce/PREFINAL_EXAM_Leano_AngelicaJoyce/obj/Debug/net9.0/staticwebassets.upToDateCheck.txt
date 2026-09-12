@@ -1,3 +1,4 @@
+wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -60,7 +61,7 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\site.css
+C:\Users\STUDENT\Source\Repos\IT_ELECTIVE_2_BSIT31E2_PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\wwwroot\css\site.css
 C:\Users\STUDENT\Source\Repos\IT_ELECTIVE_2_BSIT31E2_PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\wwwroot\favicon.ico
 C:\Users\STUDENT\Source\Repos\IT_ELECTIVE_2_BSIT31E2_PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\wwwroot\js\site.js
 C:\Users\STUDENT\Source\Repos\IT_ELECTIVE_2_BSIT31E2_PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -122,4 +123,3 @@ C:\Users\STUDENT\Source\Repos\IT_ELECTIVE_2_BSIT31E2_PREFINAL_EXAM_Leano_Angelic
 C:\Users\STUDENT\Source\Repos\IT_ELECTIVE_2_BSIT31E2_PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\STUDENT\Source\Repos\IT_ELECTIVE_2_BSIT31E2_PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\STUDENT\Source\Repos\IT_ELECTIVE_2_BSIT31E2_PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\STUDENT\Source\Repos\IT_ELECTIVE_2_BSIT31E2_PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\PREFINAL_EXAM_Leano_AngelicaJoyce\wwwroot\css\site.css
