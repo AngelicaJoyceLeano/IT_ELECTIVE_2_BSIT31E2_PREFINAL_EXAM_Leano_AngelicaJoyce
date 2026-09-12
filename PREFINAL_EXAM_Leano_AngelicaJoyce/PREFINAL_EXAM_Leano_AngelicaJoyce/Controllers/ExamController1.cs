@@ -257,6 +257,19 @@ namespace IT_ELECTIVE_2_PREFINAL_EXAM.Controllers
                     },
                     YourAnswer = "B"
                 },
+                 new Question
+                {
+                    Number = 20,
+                    Text = "A student already belongs to Section A for a particular subject. The application attempts to assign the same student to Section A again. What is the primary concern?",
+                    Choices = new[]
+                    {
+                        "A. Data integrity",
+                        "B. HTML formatting",
+                        "C. CSS inheritance",
+                        "D. Razor syntax"
+                    },
+                    YourAnswer = "A"
+                }
 
             };
 
