@@ -191,7 +191,20 @@ namespace IT_ELECTIVE_2_PREFINAL_EXAM.Controllers
                         "D. Client-side validation cannot display messages"
                     },
                     YourAnswer = "A"
+                },new Question
+                {
+                    Number = 15,
+                    Text = "A school requires every student to have a unique Student Number. Which rule best represents this requirement?",
+                    Choices = new[]
+                    {
+                        "A. Student Number should always be nullable",
+                        "B. Student Number should be unique",
+                        "C. Student Number should always be the same",
+                        "D. Student Number should contain only spaces"
+                    },
+                    YourAnswer = "B"
                 },
+
             };
 
             return View(questions);
