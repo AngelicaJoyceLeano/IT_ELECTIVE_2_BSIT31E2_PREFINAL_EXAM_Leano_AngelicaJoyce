@@ -218,6 +218,19 @@ namespace IT_ELECTIVE_2_PREFINAL_EXAM.Controllers
                     YourAnswer = "A"
                 },
 
+                new Question
+                {
+                    Number = 17,
+                    Text = "What is the purpose of a try...catch block in a controller?",
+                    Choices = new[]
+                    {
+                        "A. To create navigation properties",
+                        "B. To catch and handle exceptions that may occur during execution",
+                        "C. To generate database tables",
+                        "D. To perform client-side validation"
+                    },
+                    YourAnswer = "B"
+                },
 
             };
 
