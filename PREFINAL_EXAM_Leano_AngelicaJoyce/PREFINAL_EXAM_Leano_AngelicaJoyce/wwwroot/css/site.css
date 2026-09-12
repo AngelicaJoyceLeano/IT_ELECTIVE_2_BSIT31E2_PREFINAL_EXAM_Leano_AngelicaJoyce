@@ -29,3 +29,17 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+.choice.selected-answer {
+    background: #eef2ff;
+    border: 2px solid #4f46e5;
+    font-weight: 600;
+}
+
+    .choice.selected-answer input {
+        accent-color: #4f46e5;
+    }
+
+.choice {
+    pointer-events: none;
+    cursor: default;
+}

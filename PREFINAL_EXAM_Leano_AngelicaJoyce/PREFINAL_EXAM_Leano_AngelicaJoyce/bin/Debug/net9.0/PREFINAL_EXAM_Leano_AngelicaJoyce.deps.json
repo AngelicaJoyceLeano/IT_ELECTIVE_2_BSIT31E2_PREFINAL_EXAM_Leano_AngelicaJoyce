@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "PREFINAL_EXAM_Leano_AngelicaJoyce/1.0.0": {
+        "runtime": {
+          "PREFINAL_EXAM_Leano_AngelicaJoyce.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PREFINAL_EXAM_Leano_AngelicaJoyce/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

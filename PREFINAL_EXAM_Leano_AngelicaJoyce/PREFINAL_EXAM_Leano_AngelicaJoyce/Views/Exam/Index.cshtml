@@ -1,0 +1,394 @@
+﻿@model List<IT_ELECTIVE_2_PREFINAL_EXAM.Models.Question>
+
+@{
+    ViewData["Title"] = "Pre-Finals Examination";
+}
+
+<div class="container mt-4">
+
+    <div class="exam-header">
+
+        <div class="exam-badge">
+            WEB SYSTEM & TECHNOLOGIES
+        </div>
+
+        <h1>IT ELECTIVE 2</h1>
+
+        <h2>Pre-Finals Examination</h2>
+
+
+    </div>
+
+    <div class="student-card">
+
+        <h3>👤 Student Information</h3>
+
+        <div class="student-info">
+            <div class="progress-card">
+
+                <div class="progress-top">
+                    <span>Exam Progress</span>
+                    <span>Question 1 of 20</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+
+            </div>
+
+            <div class="info-box">
+                <span class="info-label">Student Name</span>
+                <span class="info-value">
+                    Angelica Joyce L. Leano
+                </span>
+            </div>
+
+            <div class="info-box">
+                <span class="info-label">Class & Section</span>
+                <span class="info-value">
+                    BSIT31E2
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+    @foreach (var question in Model)
+    {
+        <div class="question-card">
+
+            <div class="question-title">
+                <span class="question-number">
+                    @question.Number
+                </span>
+
+                <span class="question-text">
+                    @question.Text
+                </span>
+            </div>
+
+            <div class="choices">
+
+                @foreach (var choice in question.Choices)
+                {
+                    var letter = choice.Substring(0, 1);
+                    var isSelected = letter == question.YourAnswer;
+
+                    <label class="choice @(isSelected ? "selected-answer" : "")">
+
+                        <input type="radio"
+                               name="question_@question.Number"
+                               value="@letter"
+                               checked="@isSelected"
+                               disabled />
+
+                        <span>@choice</span>
+
+                    </label>
+                }
+
+            </div>
+
+        </div>
+    }
+    <div class="submit-section">
+
+        <button type="button" class="submit-btn">
+            ✓ Finish Examination
+        </button>
+
+    </div>
+
+    <div class="exam-footer">
+        <p>IT Elective 2 • Web System and Technologies</p>
+        <p>Pre-Finals Examination • AY 2026–2027</p>
+    </div>
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+
+        h1, h2 {
+            font-weight: bold;
+        }
+
+        .card {
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .card h5 {
+            font-weight: bold;
+        }
+
+        label {
+            cursor: pointer;
+        }
+    </style>
+
+</div>
+
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(135deg, #eef2ff, #f8fafc, #e0f2fe);
+        color: #1e293b;
+    }
+
+    /* Main container */
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 35px 20px 60px;
+    }
+
+    /* Header */
+    .exam-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .exam-badge {
+        display: inline-block;
+        padding: 8px 18px;
+        border-radius: 30px;
+        background: #1d4ed8;
+        color: white;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+    }
+
+    .exam-header h1 {
+        font-size: 42px;
+        margin: 5px 0;
+        font-weight: 800;
+        letter-spacing: -1px;
+    }
+
+    .exam-header h2 {
+        margin: 5px 0;
+        color: #475569;
+        font-weight: 500;
+    }
+
+    .exam-header p {
+        color: #64748b;
+    }
+
+    /* Student information */
+    .student-card {
+        background: white;
+        border-radius: 20px;
+        padding: 25px 30px;
+        margin-bottom: 25px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        border: 1px solid #e2e8f0;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .student-card::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 6px;
+            height: 100%;
+            background: #2563eb;
+        }
+
+        .student-card h3 {
+            margin-top: 0;
+            font-size: 21px;
+        }
+
+    .student-info {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .info-box {
+        background: #f8fafc;
+        border-radius: 12px;
+        padding: 12px 18px;
+        min-width: 250px;
+    }
+
+    .info-label {
+        display: block;
+        color: #64748b;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: .5px;
+    }
+
+    .info-value {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /* Progress */
+    .progress-card {
+        background: white;
+        padding: 20px 25px;
+        border-radius: 18px;
+        margin-bottom: 25px;
+        box-shadow: 0 8px 25px rgba(15, 23, 42, .06);
+    }
+
+    .progress-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .progress-bar {
+        height: 10px;
+        background: #e2e8f0;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .progress-fill {
+        width: 5%;
+        height: 100%;
+        background: #2563eb;
+        border-radius: 20px;
+    }
+
+    /* Question cards */
+    .question-card {
+        background: rgba(255, 255, 255, 0.96);
+        border-radius: 20px;
+        padding: 28px 30px;
+        margin-bottom: 22px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, .08);
+        border: 1px solid #e2e8f0;
+        transition: all .25s ease;
+    }
+
+        .question-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(37, 99, 235, .12);
+            border-color: #bfdbfe;
+        }
+
+    .question-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        background: #2563eb;
+        color: white;
+        font-weight: 800;
+        margin-right: 10px;
+    }
+
+    .question-text {
+        display: inline;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.6;
+    }
+
+    /* Choices */
+    .choices {
+        margin-top: 22px;
+    }
+
+    .choice {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 16px;
+        margin-bottom: 10px;
+        border: 2px solid #e2e8f0;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: .2s ease;
+        background: #fff;
+    }
+
+        .choice:hover {
+            background: #eff6ff;
+            border-color: #93c5fd;
+            transform: translateX(3px);
+        }
+
+        .choice input {
+            width: 18px;
+            height: 18px;
+            accent-color: #2563eb;
+        }
+
+        .choice label {
+            cursor: pointer;
+            flex: 1;
+            font-size: 15px;
+        }
+
+    /* Answer section */
+    .answer-box {
+        margin-top: 20px;
+        padding: 14px 18px;
+        border-radius: 12px;
+        background: #f8fafc;
+        border-left: 4px solid #2563eb;
+        color: #475569;
+    }
+
+        .answer-box strong {
+            color: #1e293b;
+        }
+
+    /* Submit button */
+    .submit-section {
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .submit-btn {
+        border: none;
+        border-radius: 14px;
+        padding: 15px 35px;
+        background: #2563eb;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0 8px 20px rgba(37, 99, 235, .25);
+        transition: .2s ease;
+    }
+
+        .submit-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(37, 99, 235, .3);
+        }
+
+    /* Footer */
+    .exam-footer {
+        text-align: center;
+        margin-top: 40px;
+        padding: 25px;
+        color: #64748b;
+        font-size: 13px;
+    }
+
+</style>
+
