@@ -231,6 +231,19 @@ namespace IT_ELECTIVE_2_PREFINAL_EXAM.Controllers
                     },
                     YourAnswer = "B"
                 },
+                 new Question
+                {
+                    Number = 18,
+                    Text = "Which middleware is commonly used in ASP.NET Core for centralized exception handling?",
+                    Choices = new[]
+                    {
+                        "A. UseDatabase()",
+                        "B. UseExceptionHandler()",
+                        "C. UseValidationHandler()",
+                        "D. UseMvcDatabase()"
+                    },
+                    YourAnswer = "B"
+                },
 
             };
 
