@@ -114,6 +114,19 @@ namespace IT_ELECTIVE_2_PREFINAL_EXAM.Controllers
                     },
                     YourAnswer = "B"
                 },
+                new Question
+                {
+                    Number = 9,
+                    Text = "What is the purpose of a navigation property such as public Section Section { get; set; }?",
+                    Choices = new[]
+                    {
+                        "A. It stores the database password",
+                        "B. It represents a relationship to another entity",
+                        "C. It creates a new database",
+                        "D. It validates the student's name"
+                    },
+                    YourAnswer = "B"
+                },
             };
 
             return View(questions);
