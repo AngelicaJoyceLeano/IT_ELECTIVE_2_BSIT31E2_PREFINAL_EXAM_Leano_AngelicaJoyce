@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PREFINAL_EXAM_Leano_AngelicaJoyce")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4b47cdadd5fce288fd9349d3abc86883f050950")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49293d2ad015f048d46558e3fc0474a6360fccf8")]
 [assembly: System.Reflection.AssemblyProductAttribute("PREFINAL_EXAM_Leano_AngelicaJoyce")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PREFINAL_EXAM_Leano_AngelicaJoyce")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
