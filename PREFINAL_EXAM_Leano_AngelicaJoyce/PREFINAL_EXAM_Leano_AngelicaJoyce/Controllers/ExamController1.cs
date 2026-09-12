@@ -166,6 +166,19 @@ namespace IT_ELECTIVE_2_PREFINAL_EXAM.Controllers
                     },
                     YourAnswer = "A"
                 },
+                new Question
+                {
+                    Number = 13,
+                    Text = "Which type of validation occurs in the browser before a request is sent to the server?",
+                    Choices = new[]
+                    {
+                        "A. Database-level validation",
+                        "B. Client-side validation",
+                        "C. Server-side validation",
+                        "D. EF Core migration validation"
+                    },
+                    YourAnswer = "B"
+                },
             };
 
             return View(questions);
